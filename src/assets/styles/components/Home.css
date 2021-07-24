@@ -1,0 +1,149 @@
+.Home{
+    display: grid;
+}
+
+.form-input-text{
+    height: 56px;
+    border-radius: 4px;
+    border: 1px solid var(--graySix);
+    padding: 15px
+}
+
+.form-input-text::placeholder{
+    color: var(--grayTwo)
+}
+
+.form-input-text:not(:last-of-type){
+    margin-bottom: 16px;
+}
+
+
+
+.Home__form{
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 300px) {
+    .Header{
+        background: var(--grayFive);
+    }
+
+    .Home__hero{
+        background: var(--grayFive);
+        display: grid;
+        align-content: center;
+        height: 250px;
+
+        margin-right: -32px;
+        margin-left: -32px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    /* .Home__hero{
+    } */
+
+    .Home__hero-text{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .Home__hero-text-used{
+        grid-column: 1 / 4;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Home__hero-text-used-new{
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .Home__hero-text-used-title-one{
+        font-size: 2.8rem;
+    }
+
+    .Home__hero-text-used-title-two{
+        font-size: 2.8rem;
+        color: var(--redOne);
+    }
+
+    .Home__hero-text-used-desc-one{
+        font-size: 1.4rem;
+        font-family: var(--fontSecondary);
+    }
+
+    .Home__hero-text-used-desc-two{
+        font-size: 1.4rem;
+        font-family: var(--fontSecondary);
+    }
+
+    .Home__hero-image{
+        position: absolute;
+        right: 0px;
+        top: 60px;
+    }
+
+    .Home__form form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Home__form-checkbox-container{
+        display: flex;
+        font-size: 1.2rem;
+    }
+
+    .Home__form-checkbox-container .checkbox{
+        transform: scale(2);
+        margin-left: 10px;
+        margin-right: 16px;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .content{
+        padding:  0 0px 0px 0px;;
+    }
+
+    .Home{
+        height: 100vh;
+    }
+
+    .Home__hero{
+        background: var(--grayFive);
+        display: grid;
+        align-content: center;
+        height: 250px;
+
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        height: 100%;
+    }
+
+    .Home {
+        grid-template-columns: repeat(12, 1fr);
+        /* grid-template-areas: "hero hero hero hero hero form form form form form form form"; */
+    }
+
+    .Home__hero{
+        /* grid-area: hero; */
+        grid-column: 1 / 6;
+    }
+
+    .Home__hero-bg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .Home__form{
+        /* grid-area: form; */
+        grid-column: 6 / 13;
+    }
+}

@@ -1,0 +1,18 @@
+:root{
+    --white: white;
+    --black: black;
+    --redOne: #EF3340;
+    --green: #43B748;
+    --gray: #494F66;
+    --grayTwo: #A3ABCC;
+    --grayThree: #676F8F;
+    --grayFour: #F0F2FA;
+    --grayFive: #F7F8FC;
+    --graySix: #C5CBE0;
+    --cyan: #6769FF;
+    --cyanTwo: #6F7DFF;
+    --mobile-width: 300px;
+    --full-width: 768px;
+    --fontPrimary: 'Lato';
+    --fontSecondary: 'Roboto';
+}

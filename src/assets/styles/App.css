@@ -1,0 +1,71 @@
+@import url('./fonts.css');
+@import url('./constants.css');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  color: var(--gray);
+  font-family: var(--fontPrimary);
+}
+
+input{
+  font-family: var(--fontPrimary);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+}
+
+/* .app{} */
+
+.content{
+  padding: 0 32px 16px 32px;
+}
+
+.mt-12{
+  margin-top: 12px;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+.mt-24{
+  margin-top: 24px;
+}
+
+.mr-8{
+  margin-right: 8px;
+}
+
+.mr-28{
+  margin-right: 28px;
+}
+
+.link-without-underline{
+  text-decoration: none;
+}
+
+.link-with-underline{
+  text-decoration: underline;
+}
+
+.btn-primary{
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 8px;
+  background: var(--redOne);
+  border: none;
+  color: var(--white);
+  letter-spacing: 0.8px;
+  font-weight: bold;
+}
